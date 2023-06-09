@@ -1,0 +1,8 @@
+version: v1
+name: buf.build/sereger/protoc-gen-json-marshaller
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
