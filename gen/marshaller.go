@@ -1,13 +1,11 @@
 package gen
 
 import (
-	"io"
-	"text/template"
-
+	"github.com/Sereger/protoc-gen-json-marshaller/marshaller"
 	"github.com/golang/glog"
 	"google.golang.org/protobuf/compiler/protogen"
-
-	"github.com/Sereger/protoc-gen-json-marshaller/marshaller"
+	"io"
+	"text/template"
 )
 
 // Options are the options to set for rendering the template.

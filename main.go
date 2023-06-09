@@ -35,12 +35,12 @@ func main() {
 
 		for _, name := range gp.Request.FileToGenerate {
 			f := gp.FilesByPath[name]
-
 			if len(f.Messages) == 0 {
 				glog.V(1).Infof("Skipping %s, no messages", name)
 				continue
 			}
 
+			glog.V(1).Infof("Processing %s", name)
 			glog.V(1).Infof("Processing %s", name)
 			glog.V(2).Infof("Generating %s\n", fmt.Sprintf("%s.pb.json.go", f.GeneratedFilenamePrefix))
 
